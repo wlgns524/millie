@@ -15,4 +15,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "millie"
 include(":app")
- 
+include(":data")
+include(":domain")
+include(":local")
+include(":remote")
