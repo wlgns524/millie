@@ -18,20 +18,23 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+    buildTypes {
+        debug {
+            isDebuggable = false
+        }
+    }
     kotlinOptions {
         jvmTarget = "17"
+        freeCompilerArgs += listOf(
+            "-P",
+            "plugin:androidx.compose.compiler.plugins.kotlin:liveLiteralsEnabled=false",
+        )
     }
     buildFeatures {
-        dataBinding = true
         compose = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.4.3"
-    }
-    packaging {
-        resources {
-            excludes += "/META-INF/{AL2.0,LGPL2.1}"
-        }
     }
 }
 

@@ -19,6 +19,7 @@ navigation-fragment-ktx = "2.6.0"
 navigation-ui-ktx = "2.6.0"
 kotlin = "1.8.10"
 hilt = "2.48"
+androidxRoom = "2.5.2"
 retrofit = "2.9.0"
 okhttp3 = "4.10.0"
 kotlinxCoroutines = "1.7.2"
@@ -74,6 +75,11 @@ hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref
 hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
 hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hilt-compose-viewmodel" }
 
+# androidx-room
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "androidxRoom" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "androidxRoom" }
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "androidxRoom" }
+
 # remote
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 retrofit-converter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
@@ -88,8 +94,6 @@ androidx-datastore-preferences-core = { group = "androidx.datastore", name = "da
 # gson
 gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
 
-# plugin
-#ksp-gradle-plugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
 
 # glide
 glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
